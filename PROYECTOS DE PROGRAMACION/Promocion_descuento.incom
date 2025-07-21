@@ -1,0 +1,25 @@
+Algoritmo Promocion_descuento
+	Mostrar "PROMOCIONNNNNN, POR CADA COMPRA DE CHOCOLATES SUPERIOR A 10, RECIBES UN 5% DESCUENTO"
+	Mostrar "_______________________________________________________________________"
+	Mostrar "Precio de chocolates: $4.000"
+	choco<-4000
+	Mostrar "Cuantos chocolates desea llevar"
+	leer cantidad
+	si cantidad < 0 Entonces
+		Repetir
+		Mostrar "solo se acepta numero mayores a 0"
+		Leer cantidad
+	hasta que cantidad>0
+	sino si catidad >=10 Entonces
+			Mostrar "Su cantidad es superior a 10, asi que se le aplicara un descuento del 5%"
+			multi = choco* cantidad
+			descuento= multi * 5 /100
+			precio_final= multi- descuento
+			Mostrar "La cantidad establecida fueron ",cantidad " las cuales cada una vale $4.000, total ", multi " y con el 5% de descuento quedaria en ", precio_final
+		SiNo
+			multi2 <- choco * cantidad
+			Mostrar "su cantida establecida no cuenta para el descuento, asi que su total a  pagar es ", multi2
+		FinSi
+	FinSi
+	
+FinAlgoritmo
