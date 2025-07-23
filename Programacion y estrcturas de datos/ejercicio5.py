@@ -1,3 +1,4 @@
+#Hacer un programa que pida numeros al usuario indefinidamente hasta ingresar el numero 111
 numero_escondido = 111
 while True:
     try:
